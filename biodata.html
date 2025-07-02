@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Pribadi</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Memuat ikon dari Lucide Icons (versi UMD yang benar untuk browser) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        /* Menggunakan font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+    <!-- Audio Latar Belakang -->
+    <!-- Ganti src dengan URL lagu .mp3 Anda -->
+    <!-- Atribut 'autoplay' akan memulai musik secara otomatis (jika diizinkan browser) -->
+    <!-- Atribut 'loop' akan mengulang musik terus-menerus -->
+    <audio autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-4xl">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+            <!-- Bagian Header dengan Gambar Latar -->
+            <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 relative">
+                <!-- URL gambar profil telah diperbaiki -->
+                <img 
+                    src="https://raw.githubusercontent.com/riki351/nikahan/0b391d27fc10feea5ac6019c1330ec60d85151fd/coba%202.jpg" 
+                    alt="Foto Profil" 
+                    class="w-36 h-36 rounded-full border-4 border-white dark:border-gray-800 absolute -bottom-16 left-1/2 -translate-x-1/2 shadow-lg object-cover"
+                    onerror="this.onerror=null;this.src='https://placehold.co/150x150/FFFFFF/333333?text=Gagal+Muat';"
+                >
+            </div>
+
+            <!-- Konten Utama -->
+            <div class="p-8 pt-24 text-center">
+                <!-- Nama dan Jabatan -->
+                <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+                    <!-- Ganti dengan nama Anda -->
+                    Muhammad Rizki Ramadhnai
+                </h1>
+                <p class="text-lg text-gray-500 dark:text-gray-400 mt-1">
+                    <!-- Ganti dengan jabatan atau status Anda -->
+                    Mahasiswa | Editor
+                </p>
+
+                <!-- Bagian "Tentang Saya" -->
+                <div class="mt-8 text-left">
+                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white border-b-2 border-blue-500 pb-2 inline-block">Tentang Saya</h2>
+                    <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+                        <!-- Tulis deskripsi singkat tentang diri Anda di sini -->
+                        Assalamu’alaikum warahmatullahi wabarakatuh, perkenalkan saya Muhammad Rizki Ramadhani, mahasiswa Program Studi Kimia. Website ini saya buat sebagai sarana pengenalan diri, tempat berbagi informasi mengenai latar belakang pendidikan, minat, serta berbagai aktivitas akademik yang saya jalani. Saya berharap web ini dapat menjadi media yang bermanfaat bagi siapa saja yang ingin mengenal saya lebih dekat, serta menjadi motivasi untuk terus belajar, berkembang, dan berkontribusi dalam dunia ilmu pengetahuan, khususnya di bidang kimia. Terima kasih atas kunjungannya, semoga membawa manfaat.
+                    </p>
+                </div>
+
+                <!-- Bagian Detail dan Keterampilan -->
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <!-- Detail Pribadi -->
+                    <div>
+                        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white border-b-2 border-purple-500 pb-2 inline-block">Detail Pribadi</h2>
+                        <ul class="mt-4 space-y-3 text-gray-600 dark:text-gray-300">
+                            <!-- Ganti detail di bawah ini -->
+                            <li class="flex items-center"><i data-lucide="cake" class="w-5 h-5 mr-3 text-purple-500"></i> 21 Tahun</li>
+                            <li class="flex items-center"><i data-lucide="map-pin" class="w-5 h-5 mr-3 text-purple-500"></i> tanjung pinang, Indonesia</li>
+                            <li class="flex items-center"><i data-lucide="mail" class="w-5 h-5 mr-3 text-purple-500"></i> rikirik0@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <!-- Keterampilan -->
+                    <div>
+                        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white border-b-2 border-green-500 pb-2 inline-block">Keterampilan</h2>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <!-- Ganti dengan keterampilan Anda -->
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Editor</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Desain</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">kimia</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian Pendidikan -->
+                <div class="mt-8 text-left">
+                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white border-b-2 border-red-500 pb-2 inline-block">Pendidikan</h2>
+                    <div class="mt-4">
+                        <!-- Ganti dengan riwayat pendidikan Anda -->
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Universitas Maritim Raja Ali Haji</h3>
+                            <p class="text-gray-500 dark:text-gray-400">S1 Kimia | 2024 - Now</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">SMA Bunguran Barat</h3>
+                            <p class="text-gray-500 dark:text-gray-400">IPA | 2021 - 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian Kontak / Media Sosial -->
+                <div class="mt-10">
+                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Hubungi Saya</h2>
+                    <div class="flex justify-center space-x-6 mt-4">
+                        <!-- Ganti '#' dengan URL profil media sosial Anda -->
+                        <a href="#" class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500 transition-colors duration-300">
+                            <i data-lucide="linkedin" class="w-8 h-8"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-300">
+                            <i data-lucide="github" class="w-8 h-8"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-pink-600 dark:text-gray-400 dark:hover:text-pink-500 transition-colors duration-300">
+                            <i data-lucide="instagram" class="w-8 h-8"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300">
+                            <i data-lucide="twitter" class="w-8 h-8"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Memastikan skrip ikon dijalankan setelah seluruh halaman dimuat
+        window.onload = () => {
+            // Inisialisasi ikon Lucide
+            lucide.createIcons();
+        };
+    </script>
+</body>
+</html>
